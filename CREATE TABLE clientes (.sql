@@ -1,7 +1,0 @@
-CREATE TABLE clientes (
-    id SERIAL PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    telefone VARCHAR(15),
-    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
