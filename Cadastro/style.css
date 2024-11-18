@@ -10,7 +10,7 @@ h1 {
     color: #ffffff;
 }
 div {
-    background: rgb(40, 40, 245);
+    background: rgb(18, 18, 238);
     padding: 50px;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,6 @@ input {
     border: 1px solid #000000;
     border-radius: 4px;
 }
-
 .btn-link{
    margin-left: 220px;
    border: 3px;
@@ -45,5 +44,5 @@ input {
 .btn-link:hover {
     box-shadow: 2px 2px 2px #000000;
     cursor: pointer;
-    background-color: rgb(15, 99, 255) ;
+    background-color: cadetblue ;
 }

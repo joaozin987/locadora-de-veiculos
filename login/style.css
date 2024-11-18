@@ -11,7 +11,7 @@ body {
 
 form {
     background-color: #eef0f3;
-    padding: 90px;
+    padding: 80px;
     height: 40vh;
     width: 300px;
     border-radius: 8px;
@@ -35,26 +35,26 @@ label {
 input{
     width: 100%;
     padding: 12px;
-    margin-left: 0px;
-    margin-bottom: 20px;
+    margin: 10px 0px 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 15px;
 
 }
 
-button {
-    width: 60%;
-    margin-left: 67px;
-    padding: 10px;
-    background-color: #080808;
-    color: rgb(246, 246, 248);
-    font-size: 15px;
-    border-radius: 4px;
+.btn-link{
+    border: 4px;
+    margin-left: 70px;
+    background-color: #cac3c3;
+    align-items: right;
+    color: #fbfbfc;
+    text-decoration: none;
+    padding: 16px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+ }
+ .btn-link:hover{
+    box-shadow: 2px 2px 2px #0c0a0a;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(15, 19, 253);
-    box-shadow: 2px 2px 2px;
-}
+    background-color: black;
+ }
