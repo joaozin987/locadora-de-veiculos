@@ -1,14 +1,14 @@
-function addClickEventToDiv(divId, inputId) {
-    const div = document.getElementById(divId);
-    const input = document.getElementById(inputId);
+// Seleciona os elementos principais
+const container = document.querySelector('.veiculos-container');
+const setaEsquerda = document.querySelector('.seta-esquerda');
+const setaDireita = document.querySelector('.seta-direita');
 
-    div.addEventListener('click' , () => {
-        input.focus();
-        input.click();
-    });
-}
+// Adiciona o evento de clique na seta esquerda
+setaEsquerda.addEventListener('click', () => {
+  container.scrollLeft -= 300; // Move 300px para a esquerda
+});
 
-    addClickEventToDiv('retirada-group', 'data-de-retirada');
-    addClickEventToDiv('devolucao-group',  'data-de-devolucao');
-    addClickEventToDiv('horario-retirada-group', 'horario-de-retirada');
-    addClickEventToDiv('horario-devolucao-group', 'horario-de-devolucao');
+// Adiciona o evento de clique na seta direita
+setaDireita.addEventListener('click', () => {
+  container.scrollLeft += 300; // Move 300px para a direita
+});
