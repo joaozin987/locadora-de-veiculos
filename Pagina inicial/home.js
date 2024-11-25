@@ -1,14 +1,32 @@
-// Seleciona os elementos principais
-const container = document.querySelector('.veiculos-container');
-const setaEsquerda = document.querySelector('.seta-esquerda');
-const setaDireita = document.querySelector('.seta-direita');
+const input = document.getElementById
 
-// Adiciona o evento de clique na seta esquerda
-setaEsquerda.addEventListener('click', () => {
-  container.scrollLeft -= 300; // Move 300px para a esquerda
+const inputs = document.querySelectorAll('input[type="time"], input[type="date"]');
+
+inputs.forEach(input => {
+  input.addEventListener('focus', () => {
+    setTimeout(() => {
+      if (typeof input.showPicker === 'function') {
+        input.blur();
+        setTimeout(() => {
+          input.showPicker();
+        }, 50);
+      } else {
+        console.warn('showPicker não é suportado neste navegador.');
+      }
+    });
+  });
 });
 
-// Adiciona o evento de clique na seta direita
-setaDireita.addEventListener('click', () => {
-  container.scrollLeft += 300; // Move 300px para a direita
-});
+const axios = require('axios')
+
+exports.home = (req, res) => {
+   axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios/${cidade}')
+    .then(response => {
+        res.render('pages/home', {
+          cidade: response.data
+     })
+   }).catch(error => {
+      console.log(error)
+      res.send('erro')
+   })
+}

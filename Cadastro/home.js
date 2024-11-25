@@ -1,4 +1,21 @@
-   
+ //funcao de clique para a data
+
+const inputs = document.querySelectorAll('input[type="date"]');
+
+inputs.forEach(input => {
+  input.addEventListener('focus', () => {
+    if (typeof input.showPicker === 'function') {
+      input.blur();
+      setTimeout(() => {
+        input.showPicker();
+      }, 50);
+    } else {
+      console.warn('showPicker não é suportado neste navegador.');
+    }
+  });
+});
+
+
    $(document).ready(function(){
         $('#telefone').mask('(00) 00000-0000');
 });
