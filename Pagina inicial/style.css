@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{ 
-    
-}
 .formulario{
     background-image: url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png'); /* Insira o caminho da sua imagem */
     background-size: cover;
@@ -97,6 +94,7 @@ form{
     padding: 13px;
     font-size: 17px;
     padding-left: 25px;
+    margin: 0 auto;
     outline: none;
     width: 100%;
 }

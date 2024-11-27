@@ -1,1 +1,1 @@
-CREATE DATABASE sistema_veiculos;
+SELECT * FROM veiculos;

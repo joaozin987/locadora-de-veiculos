@@ -30,7 +30,10 @@ inputs.forEach(input => {
          console.log("jQuery e o jQuery Mask Plugin foram carregados corretamente.");
          $('#cpf').mask('000.000.000-00');
 });
-
+   $(document).ready(function(){
+        $('#telefone').mask('000.000.000-00');
+   });
+   
     $(document).ready(function(){
         $("#data-nascimento").datepicker({
          dateFormat: 'dd/mm/yy',
