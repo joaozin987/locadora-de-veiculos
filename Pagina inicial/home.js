@@ -1,5 +1,3 @@
-const input = document.getElementById
-
 const inputs = document.querySelectorAll('input[type="time"], input[type="date"]');
 
 inputs.forEach(input => {
