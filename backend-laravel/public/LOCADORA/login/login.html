@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="./custom.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="register.php" method="POST">
+        <h1>Login</h1>
+
+    <form method="POST" action="{{ route('login') }}">
+        
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="Digite seu cpf">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha">
+        
+        
+        <a class="btn-link" href="../Pagina inicial/home.html">Entrar</a>
+    </form>
+</body>
+</html>

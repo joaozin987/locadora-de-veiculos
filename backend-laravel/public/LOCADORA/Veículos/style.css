@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 9px 0px;
+    text-align: center;
+    background-color:  rgba(21, 199, 243, 0.904);
+    border: none;
+    
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5px 15px 5px;
+}
+header li{
+    display: inline-block;
+    margin: 10px 45px 25px 0px;
+    padding: 0;
+    justify-content: space-between;
+    border: 5px;
+}
+header a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(10, 11, 12);
+}
+header .a:hover{
+    background-color: rgb(2, 6, 10);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px;
+}
+.formulario{
+    background-image: url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png'); /* Insira o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    padding:20px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    min-height: 200px;
+    width: 100%;
+    margin: 0 auto;; 
+}
+a.btn-link{
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(2, 2, 2);
+    margin-left: 10px;
+    font-size: 18px;
+    border: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-link:hover{
+    background-color:   rgb(9, 231, 202);
+    box-shadow: 1px 1px 1px;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group {
+    display: inline-block;
+    margin-right: 40px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    padding: 10px ;
+    flex-direction: column;
+}
+.form-group label{
+    font-weight: lighter;
+    margin-left: 10px;
+    color: #fafafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.form-group input{
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 0 auto;
+    outline: none;
+    width: 100%;
+}
+input::placeholder {
+    color: #706969;
+    padding-left: 20px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group input:hover,
+.form-group input:focus {
+    border-color: #0066ff;
+    background-color: #eaedf0;
+}
+.form-group i{
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    color: rgb(120, 122, 124);
+    pointer-events: none;
+    bottom: -34px;
+}
+li a{
+    padding: 13px;
+    font-size: 18px;
+    margin-left: 7px;
+    border: 4px;
+    cursor: pointer;
+}
+li a{
+    padding: 13px;
+    font-size: 16px;
+    margin-left: 7px;
+    border: 4px;
+    cursor: pointer;
+}
+.horario{
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 28px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    width: 10%;
+    margin: 25px 40px;
+}
+.horario label{
+    color: #0f0707;
+    position: absolute;
+    top: -22px;
+    font-size: 19px;
+    margin-left:  6px;
+    background-color: white;
+}
+.horario input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    color: #333;
+    margin-left: 20px;
+    pointer-events: none;
+}
+.alug{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.veiculos {
+    padding: 20px;
+    text-align: center;
+}
+.veiculos h1 {
+    color: #009fa5;
+    margin-bottom: 20px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img {
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto;
+}
+.card h2 {
+    font-size: 18px;
+    color: #444444;
+    margin: 10px 0;
+}
+.card p{
+    font-size: 20px;
+    color: #3a3b3b;
+    margin: 10px 0;
+}
+.desconto span {
+    background: yellow;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.detalhes{
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #1e3ef1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    
+}
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #0f0707;
+    color: wheat;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+
+}
+.btn:hover{
+    background-color: #0056b3;
+    box-shadow: 1px 1px 1px;
+}
+.card-esgotado {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: brightness(0.5);
+}
+
+.card-esgotado-status {
+    margin: 15px 0;
+}
+.esgotado-texto {
+    color: #ff120a;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.btn.consultar {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    pointer-events: auto; /* Ativa interatividade apenas para este botão */
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.grupo{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
