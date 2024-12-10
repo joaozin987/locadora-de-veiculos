@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./home.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="center"></div>
+        <nav>
+            <ul>
+                <li><a href="../Pagina inicial/home.html">Home</a></li>
+                <li><a href="./veiculo.html">Nossos Veículos</a></li>
+                <li><a href="#">Reservas Online</a></li>
+            </ul>
+        </nav>
+        </header>
+        <nav>
+            <div class="formulario">
+    
+                <div class="container">
+                    <h1>Aluguel de Veículos em Alagoas</h1>
+                    <p class="alug">Aluguel de Veículos em Alagoas: mobilidade e conforto</p>
+                </div>
+    
+                <div class="form-group">
+    
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <label for="retirada">Retirada</label>
+                    <input type="text" id="retirada" placeholder="Barra de Santo Antônio">
+                </div>
+                
+                <div class="form-group">
+                    <label for="data-de-retirada">Data de retirada</label>
+                    <input type="date" id="date" placeholder="dd/mm/aaaa"> 
+                </div>
+                
+               <div class="form-group">
+                <label for="horario de retirada">Horário de retirada</label>
+                <input type="time"  id="time" placeholder="--:--">
+              </div>
+
+                <div class="form-group">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <label for="igual-a-retirada">Local de Deixada</label>
+                    <input type="text" id="igual-a-retirada" placeholder="Paripueira"> 
+                    </div>
+                
+                <div class="form-group">
+                    <label for="data-de-devolucao">Data de Devolucao</label>
+                    <input type="date" id="date" placeholder="--:--">
+               </div>
+    
+                <div class="form-group">
+                    <label for="horario-de-devolucao">Horário de devolução</label>
+                    <input type="time" id="time">
+                </div>
+            
+                <a class="button" href="../Veículos/veiculo.html">Pesquisar</a> 
+            </div>
+        </div>
+        <section class="veiculos">
+            <h1>Escolha seu Veículo</h1>
+
+            <div class="card-container">
+                
+                <!--Card 1-->
+
+                <div class="card">
+                    <h2>Hatch Compacto 1.0</h2>
+                    <a href="#" class="detalhes">Mais detalhes</a>
+                    <img src="../img/images.jpeg" alt="Carro compacto" width="400px">
+                    <div class="precos">
+                    <p class="desconto">R$ 86,36/dia <span>-5%</span></p>
+                    <p class="normal">R$ 90,90/dia</p>
+                </div>
+                <div class="botoes">
+                    <button class="btn">Pagar na loja</button>
+                    <button class="btn antecipado">Pagar antecipado</button>
+                </div>
+                </div>
+
+                  <!-- Card 2 -->
+
+            <div class="card">
+                <p>Honda CG160</p>
+                <a href="#" class="detalhes">Mais detalhes</a>
+                <img src="../img/download.avif" alt="porte-medio" width="150px">
+                <div class="precos">
+                    <p class="desconto">R$ 70,91/dia <span>-%20</span></p>
+                    <p class="normal">R$ 56,00/dia</p>
+                </div>
+                <div class="botoes">
+                    <button class="btn">Pagar na loja</button>
+                    <button class="btn">Pagar antecipado</button>
+                </div>
+            </div>
+
+                 <!--Card 3-->
+
+            <div class="card-esgotado">
+                <h2>Lancha</h2>
+                <p class="grupo">Grupo A</p>
+                <p>Lancha Malou</p>
+                <a href="#" class="detalhes">Mais detalhes</a>
+                <img src="../img/Cópia-de-DJI_0805-scaled.jpg" alt="porte-medio" width="200px">
+                <div class="status">
+                    <p class="esgotado-texto"> Indisponível</p>
+                </div>
+                <div class="botoes">
+                    <button class="btn consultar">Consultar Lojas Próximas</button>
+                </div>
+            </div>
+                <!--Card 4-->
+
+            <div class="card">
+                <h2>Hatch Compacto 1.0</h2>
+                <a href="#" class="detalhes">Mais detalhes</a>
+                <img src="../img/" alt="Carro compacto">
+                <div class="precos">
+                <p class="desconto">R$ 86,36/dia <span>-5%</span></p>
+                <p class="normal">R$ 90,90/dia</p>
+
+            <div class="botoes">
+                    <button class="btn">Pagar na loja</button>
+                    <button class="btn">Pagar antecipado</button>
+                </div>
+             </div>
+        </section>
+        <section class="Veículos">
+            <div class="container"></div>
+        </section>
+</body>
+</html>
