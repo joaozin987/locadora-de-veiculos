@@ -26,9 +26,14 @@ header li{
     justify-content: space-between;
     border: 5px;
 }
+
+li:hover{
+    transform: scale(1.10);
+    transition: .3s;
+}
 header a{
     text-decoration: none;
-    font-size:17px;
+    font-size: 17px;
     color: rgb(10, 11, 12);
 }
 header .a:hover{
@@ -92,12 +97,13 @@ h1{
 }
 .form-group input{
     border-radius: 8px;
-    padding: 12px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 17px;
     padding-left: 10px;
     margin: 0 auto;
     outline: none;
     width: 100%;
+    transition: all 0.3s ease;
 }
 input::placeholder {
     color: #706969;
@@ -247,7 +253,7 @@ li a{
     border: 1px solid #ddd;
     border-radius: 10px;
     width: 250px;
-    height: 70vh;
+    height: 80vh;
     padding: 20px;
     z-index: 2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

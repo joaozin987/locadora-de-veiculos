@@ -6,11 +6,10 @@ body {
     min-height: 100vh;
     margin: 20px;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #383737;
 }
-
-form {
-    background-color: #eef0f3;
+.form {
+    background-color: rgb(198, 198, 202);
     padding: 80px;
     height: 40vh;
     width: 300px;
@@ -29,32 +28,42 @@ h1 {
 
 label {
     display: block;
-    color: #7a7a7a;
+    color: #000000;
 }
 
 input{
     width: 100%;
     padding: 12px;
-    margin: 10px 0px 30px;
-    border: 1px solid #ccc;
+    margin: 10px 0px 10px;
+    border: 1px solid #7c7c7c;
     border-radius: 4px;
     font-size: 15px;
 
 }
 
+a.detalhes{
+    color: #0a0ae7;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: block;
+ }
+
 .btn-link{
-    border: 4px;
-    margin-left: 70px;
-    background-color: #cac3c3;
+    border: none;
+    margin-left: 80px;
+    background-color: #000000;
     align-items: right;
     color: #fbfbfc;
     text-decoration: none;
-    padding: 16px 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 40px;
+    font-family:  sans-serif;
+    border-radius: 10px;
     font-size: 16px;
  }
  .btn-link:hover{
     box-shadow: 2px 2px 2px #0c0a0a;
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(3, 217, 255);
  }

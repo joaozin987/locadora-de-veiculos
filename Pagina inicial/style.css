@@ -7,6 +7,7 @@
 body{
     width: 100%;
     height: 400vh;
+    min-width: 700px;
 }
 .formulario{
     background-image: url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png'); /* Insira o caminho da sua imagem */
@@ -50,7 +51,7 @@ header .a:hover{
     box-shadow: 2px 2px 2px;
 }
  a.button{
-    padding: 14px 30px;
+    padding: 10px 20px;
     text-decoration: none;
     color: #ffffff;
     background-color: rgb(2, 2, 2);
@@ -59,10 +60,11 @@ header .a:hover{
     border: 2px;
     border-radius: 6px;
     cursor: pointer;
+    transition: .3s;
 }
 .button:hover{
     background-color:   rgb(9, 231, 202);
-    box-shadow: 1px 1px 1px;
+    box-shadow: 0 0 10px 3px #434444;
 }
 form{
     display: flex;
@@ -96,6 +98,7 @@ form{
     margin: 0 auto;
     outline: none;
     width: 100%;
+    transition: all 0.3s ease;
 }
 input::placeholder {
     color: #706969;
@@ -285,18 +288,28 @@ p{
     background-color: #0056b3;
 }  
 section.sobre{
-    padding: 40px 4%;
+    margin-top: 15px;
+    padding: 40px 3%;
+    height: 70vh;
+    box-shadow: 0 0 30px 5px #97a1a7;
+    border-radius: 10px;
 }
- .flex{
+.flex{
     align-items: center;
     gap: 60px;
 }
 .txt-sobre h1{
     color: rgba(0, 0, 0, 0.404);
     text-align: left;
-    margin-top: 40px;
+    margin-top: 15px;
     font-size: 30px;
+    margin-left: 10px;
     margin-bottom: 20px;
+    transition: .3s;
+}
+.txt-sobre h1:hover{
+    color: #434444;
+    transform: scale(1.05);
 }
 img{
     float: right;
@@ -305,10 +318,105 @@ img{
     border-radius: 10px;
     height: 47vh;
 }
-.txt-sobre p{
-    overflow: hidden;  
+.txt-sobre p{  
     color: #000;
     font-family: Verdana;
-    font-size: 18px;
+    font-size: 19px;
+    margin-top: 30px;
     align-items: justify;
+}
+.sobre img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+.txt-turismo h1{
+    color: rgba(0, 0, 0, 0.404);
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.txt-turismo h1:hover{
+    color: #434444;
+    transform: scale(1.05);
+}
+.txt-turismo p{  
+    color: #7a7a7a;
+    font-family: serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.txt-turismo .img-t  img{
+    float: left;
+    width: 410px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    height: 47vh;
+    margin-left: 70px;
+}
+.turismo img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 50px;
+    }
+}
+.passeios .img-p  img{
+    float: left;
+    width: 410px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 47vh;
+    margin-left: 70px;
+}
+.passeios img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 50px;
+    }
+}
+.passeios h2{
+    color: rgba(107, 107, 107, 0.404);
+    text-align: center;
+    margin-top: 90px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.passeios h2:hover{
+    color: #494949;
+    transform: scale(1.05);
+}
+.passeios .onee{  
+    color: #696868;
+    font-family: serif;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-align: center;
 }

@@ -39,6 +39,23 @@ header li{
     padding: 0;
     justify-content: space-between;
 }
+a button.icone{
+    font-size: 38px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 40px;
+    list-style: none;
+    background-color: rgba(21, 199, 243, 0.904);
+    transition: .3s;
+}
+a button.icone:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 0 20px 4px rgba(21, 199, 243, 0.904);
+}
 header a{
     text-decoration: none;
     font-size: 17px;
@@ -285,7 +302,11 @@ p{
     background-color: #0056b3;
 }  
 section.sobre{
+    margin-top: 15px;
     padding: 40px 4%;
+    height: 70vh;
+    box-shadow: 0 0 30px 5px #97a1a7;
+    border-radius: 10px;
 }
  .flex{
     align-items: center;
@@ -294,9 +315,16 @@ section.sobre{
 .txt-sobre h1{
     color: rgba(0, 0, 0, 0.404);
     text-align: left;
-    margin-top: 40px;
+    margin-top: 15px;
     font-size: 30px;
+    margin-left: 10px;
     margin-bottom: 20px;
+    transition: .3s;
+}
+
+.txt-sobre h1:hover{
+    color: #434444;
+    transform: scale(1.05);
 }
 img{
     float: right;
@@ -310,4 +338,102 @@ img{
     color: #000;
     font-family: Verdana;
     font-size: 18px;
+}
+
+.sobre img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+.txt-turismo h1{
+    color: rgba(0, 0, 0, 0.404);
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.txt-turismo h1:hover{
+    color: #434444;
+    transform: scale(1.05);
+}
+.txt-turismo p{  
+    color: #7a7a7a;
+    font-family: serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.txt-turismo .img-t  img{
+    float: left;
+    width: 410px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    height: 47vh;
+    margin-left: 70px;
+}
+.turismo img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 50px;
+    }
+}
+
+
+.passeios .img-p  img{
+    float: left;
+    width: 410px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 47vh;
+    margin-left: 70px;
+}
+.passeios img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 50px;
+    }
+}
+.passeios h2{
+    color: rgba(107, 107, 107, 0.404);
+    text-align: center;
+    margin-top: 90px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.passeios h2:hover{
+    color: #494949;
+    transform: scale(1.05);
+}
+.passeios .onee{  
+    color: #696868;
+    font-family: serif;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-align: center;
 }
