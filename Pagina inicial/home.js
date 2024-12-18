@@ -24,16 +24,49 @@ function setupTimeAndDateInputs() {
 setupTimeAndDateInputs();
 
 
-const axios = require('axios')
+const url = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/AL/municipios';
+let municipios = []; // Variável global para armazenar os dados
 
-exports.home = (req, res) => {
-   axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios/${cidade}')
-    .then(response => {
-        res.render('pages/home', {
-          cidade: response.data
-     })
-   }).catch(error => {
-      console.log(error)
-      res.send('erro')
-   })
-}
+    // Carrega os dados dos municípios
+    $(document).ready(function() {
+        $.getJSON(url, function(data) {
+            municipios = data; // Armazena os dados na variável
+        });
+    });
+
+    // Evento de digitação no input
+    $("#retirada").on("input", function() {
+        const termo = $(this).val().toLowerCase();
+        let sugestoes = "";
+
+        // Filtra os municípios que começam com as letras digitadas
+        const filtrados = municipios.filter(mun =>
+            mun.nome.toLowerCase().startsWith(termo)
+        );
+
+        // Gera as sugestões dinamicamente
+        if (filtrados.length > 0 && termo !== "") {
+            sugestoes = "<ul class='suggestions'>";
+            filtrados.forEach(mun => {
+                sugestoes += `<li>${mun.nome}</li>`;
+            });
+            sugestoes += "</ul>";
+        }
+
+        // Remove sugestões antigas e adiciona novas
+        $(".suggestions").remove();
+        $(this).after(sugestoes);
+
+        // Preenche o input ao clicar numa sugestão
+        $(".suggestions li").on("click", function() {
+            $("#retirada").val($(this).text());
+            $(".suggestions").remove();
+        });
+    });
+
+    // Remove as sugestões ao clicar fora do input
+    $(document).on("click", function(e) {
+        if (!$(e.target).closest(".form-group").length) {
+            $(".suggestions").remove();
+        }
+    });

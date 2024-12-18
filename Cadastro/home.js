@@ -165,3 +165,8 @@ $(document).ready(function() {
         }
     });
 });
+
+    function logout() {
+        alert("Cadastro Realizado com sucesso!");
+        window.location.href = "login.html";
+    }
