@@ -1,7 +1,12 @@
 <?php
-use App\Http\Controller\UsuarioController;
+use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
+
+
+Route::get('/', function () {
+    return view('Inicio.inicio');
+});
 
 Route::get('/Cadastro', [UsuarioController::class, 'exibirformularioCadastro'])->name('Cadastro');
 Route::post('/Cadastro',[UsuarioController::class, 'salvarUsuario']);

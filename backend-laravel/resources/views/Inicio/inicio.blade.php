@@ -17,16 +17,33 @@
 </head>
 <body>
     <header>
-        <div class="center"></div>
-        <nav>
+        <nav class="nav-bar">
+           <div class="logo">
+            <h4>TurisWaves</h4>
+           </div>
+            <div class="center">
             <ul>
-                <li><a href="{{ route('Inicio') }}">Home</a></li>
-                <li><a href="{{ route('Veículos') }}">Nossos Veículos</a></li>
-                <li><a href="#">Reservas Online</a></li>
+                <li><a  href="{{ route('Inicio') }}">Home</a></li>
+                <li><a  href="{{ route('Veículos') }}">Nossos Veículos</a></li>
+                <li><a  href="#">Reservas Online</a></li>
                 <a class="button" href="{{ route('Cadastro') }}">Cadastre-se</a>
                 <a class="button" href="{{ route('Login') }}">Entrar</a>
             </ul>
+        </div>
+    
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><i class="bi bi-list"></i></button>
+        </div>
         </nav>
+        <div class="menu-mobile">
+            <ul>
+                <li> <li><a  href="{{ route('Inicio') }}">Home</a></li>
+                <li><a  href="{{ route('Veículos') }}">Nossos Veículos</a></li>
+                <li><a  href="#">Reservas Online</a></li>
+                <a class="button" href="{{ route('Cadastro') }}">Cadastre-se</a>
+                <a class="button" href="{{ route('Login') }}">Entrar</a>
+            </ul>
+        </div>
  </header>
     <nav>
         <div class="formulario">
