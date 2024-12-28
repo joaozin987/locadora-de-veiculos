@@ -13,9 +13,11 @@
 </head>
 <body>
     <header>
-
-        <div class="center"></div>
-        <nav>
+        <nav class="nav-bar">
+            <div class="logo">
+             <h4>TurisWaves</h4>
+             
+        <div class="center">
             <ul>
                 <li><a href="{{ route('Inicio') }}">Home</a></li>
                 <li><a href="{{ route('Veículos') }}">Nossos Veículos</a></li>
@@ -23,6 +25,21 @@
                 <a class="button" href="{{ route('Cadastro') }}">Cadastre-se</a>
                 <a class="button" href="{{ route('Login') }}">Entrar</a>
             </ul>
+        </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="bi bi-list"></i></button>
+            </div>
+            </nav>
+            <div class="menu-mobile">
+                <ul>
+                    <li> <li><a  href="{{ route('Inicio') }}">Home</a></li>
+                    <li><a  href="{{ route('Veículos') }}">Nossos Veículos</a></li>
+                    <li><a  href="#">Reservas Online</a></li>
+                    <a class="button" href="{{ route('Cadastro') }}">Cadastre-se</a>
+                    <a class="button" href="{{ route('Login') }}">Entrar</a>
+                </ul>
+            </div>
         </nav>
         </header>
         <nav>
@@ -75,8 +92,8 @@
                     <a href="#" class="detalhes">Mais detalhes</a>
                     <img src="assets/img/caption.jpg" alt="" width="">
                     <div class="precos">
-                    <p class="desconto">R$ 150,00/ 30min <span>-5%</span></p>
-                    <p class="normal">R$ 145,00/ 30min</p>
+                    <p class="desconto">R$150,00/ 30min <span>-5%</span></p>
+                    <p class="normal">R$145,00/ 30min</p>
                 </div>
                 <div class="botoes">
                     <button class="btn2">Pagar na loja</button>
@@ -91,8 +108,8 @@
                 <a href="#" class="detalhes">Mais detalhes</a>
                 <img src="assets/img/05.jpg" alt="" width="">
                 <div class="precos">
-                    <p class="desconto">R$ 120,00/hora<span>-%20</span></p>
-                    <p class="normal">R$ 100,00/hora</p>
+                    <p class="desconto">R$120,00/hora<span>-%20</span></p>
+                    <p class="normal">R$100,00/hora</p>
                 </div>
                 <div class="botoes">
                     <button class="btn1">Pagar na loja</button>
@@ -120,8 +137,8 @@
                 <a href="#" class="detalhes">Mais detalhes</a>
                 <img src="assets/img/c2c12a8b-94c7-4412-b549-06459f29fb82.large.jpg" alt="">
                 <div class="precos">
-                <p class="desconto">R$ 120,00/p pessoa <span>-5%</span></p>
-                <p class="normal">R$ 115,00/p pessoa</p>
+                <p class="desconto">R$120,00/p pessoa <span>-5%</span></p>
+                <p class="normal">R$115,00/p pessoa</p>
 
             <div class="botoes">
                     <button class="btn">Pagar na loja</button>
@@ -142,8 +159,8 @@
                     <a href="#" class="detalhes">Mais detalhes</a>
                     <img src="assets/img/03-hb20-2013_novembro2017.jpg" alt="" width="">
                     <div class="precos">
-                    <p class="desconto">R$ 120,00/dia <span>-5%</span></p>
-                    <p class="normal">R$ 115,00/dia</p>
+                    <p class="desconto">R$120,00/dia <span>-5%</span></p>
+                    <p class="normal">R$115,00/dia</p>
                 </div>
                 <div class="botoes">
                     <button class="btn3">Pagar na loja</button>
@@ -158,8 +175,8 @@
                 <a href="#" class="detalhes">Mais detalhes</a>
                 <img src="assets/img/images (3).jpeg" alt="porte-medio" width="">
                 <div class="precos">
-                    <p class="desconto">R$ 90,00/dia <span>-%10</span></p>
-                    <p class="normal">R$ 80,00/dia</p>
+                    <p class="desconto">R$90,00/dia <span>-%10</span></p>
+                    <p class="normal">R$80,00/dia</p>
                 </div>
                 <div class="botoes">
                     <button class="btn1">Pagar na loja</button>
@@ -187,8 +204,8 @@
                 <a href="#" class="detalhes">Mais detalhes</a>
                 <img src="assets/img/images (2).jpeg" alt="">
                 <div class="precos">
-                <p class="desconto">R$ 180,00/dia <span>-20%</span></p>
-                <p class="normal">R$ 160,/dia</p>
+                <p class="desconto">R$180,00/dia <span>-20%</span></p>
+                <p class="normal">R$160,/dia</p>
 
             <div class="botoes">
                     <button class="btn4">Pagar na loja</button>
@@ -209,8 +226,8 @@
                     <a href="#" class="detalhes">Mais detalhes</a>
                     <img src="assets/img/download.avif" alt="" width="">
                     <div class="precos">
-                    <p class="desconto">R$ 70,00/dia <span>-5%</span></p>
-                    <p class="normal">R$ 65,00/dia</p>
+                    <p class="desconto">R$70,00/dia <span>-5%</span></p>
+                    <p class="normal">R$65,00/dia</p>
                 </div>
                 <div class="botoes">
                     <button class="btn3">Pagar na loja</button>
@@ -225,8 +242,8 @@
                 <a href="#" class="detalhes">Mais detalhes</a>
                 <img src="assets/img/Honda-Bros-ABS-2025-Cinza-1.jpeg" alt="" width="">
                 <div class="precos">
-                    <p class="desconto">R$ 70,00/dia <span>-%10</span></p>
-                    <p class="normal">R$ 60,00/dia</p>
+                    <p class="desconto">R$70,00/dia <span>-%10</span></p>
+                    <p class="normal">R$60,00/dia</p>
                 </div>
                 <div class="botoes">
                     <button class="btn1">Pagar na loja</button>
@@ -254,8 +271,8 @@
                 <a href="#" class="detalhes">Mais detalhes</a>
                 <img src="assets/img/CB-Twister_6.jpg" alt="">
                 <div class="precos">
-                <p class="desconto">R$ 86,36/dia <span>-5%</span></p>
-                <p class="normal">R$ 90,90/dia</p>
+                <p class="desconto">R$86,36/dia <span>-5%</span></p>
+                <p class="normal">R$90,90/dia</p>
 
             <div class="botoes">
                     <button class="btn4">Pagar na loja</button>
@@ -264,58 +281,22 @@
              </div>
         </section>
        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <section class="rodape">
+            <div class="roda">
+                <h1>Dicas, promoções e ofertas exclusivas para Aluguel de Veiculos no seu e-mail.</p>
+                    <h1>
+    
+            <label for="Nome">Nome </label>
+            <input type="text" id="Nome" placeholder="Digite seu nome">
+    
+            <label for="e-mail">Email</label>
+            <input type="text"  id="e-mail" placeholder="Digite seu e-mail">
+    
+            <button class="enviar">Enviar</button>
+        </section>
 
         <footer class="main-footer">
-            <div class="section">
-                <h1>Alugue um veiculo</h1>
-    
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam officiis veritatis quis eius odio odit sapiente temporibus nesciunt facere, atque omnis corporis hic ipsam quaerat neque quos alias ab!</p>
-        </div>
-            <div class="section">
+         <div class="section">
             <h1>Atendimento ao cliente</h1>
             <a class="btn-social" href="https://www.instagram.com/joaosantoszz__/" target="_blank">
                 <i class="bi bi-instagram"></i>

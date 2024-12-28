@@ -1,3 +1,15 @@
+function menuShow(){
+  let menuMobile = document.querySelector('.menu-mobile');
+  if(menuMobile.classList.contains('open')){
+     menuMobile.classList.remove('open');
+     document.querySelector('.icon').src = "assets/img/menu.png";
+  } else{
+   menuMobile.classList.add('open');
+    document.querySelector('.icon').src = "assets/img/close.png";
+  }
+}
+
+
 function setupTimeAndDateInputs() {
     const inputs = document.querySelectorAll('input[type="time"], input[type="date"]');
   
@@ -76,4 +88,20 @@ let municipios = []; // Variável global para armazenar os dados
     function logout() {
       alert("Você saiu da conta!"); 
       window.location.href = "login.html"; 
+  }
+
+
+  let count = 1;
+  document.getElementById("radio1").checked = true;
+
+  setInterval(function(){
+    nextImage();
+  },5000)
+
+  function nextImage(){
+    count++;
+    if(count>2){
+      count = 1;
+    }
+    document.getElementById("radio"+count).checked = true;
   }

@@ -1,3 +1,17 @@
+function menuShow(){
+  let menuMobile = document.querySelector('.menu-mobile');
+  if(menuMobile.classList.contains('open')){
+     menuMobile.classList.remove('open');
+     document.querySelector('.icon').src = "assets/img/menu.png";
+  } else{
+   menuMobile.classList.add('open');
+    document.querySelector('.icon').src = "assets/img/close.png";
+  }
+}
+
+
+
+
 function setupTimeAndDateInputs() {
     const inputs = document.querySelectorAll('input[type="time"], input[type="date"]');
   

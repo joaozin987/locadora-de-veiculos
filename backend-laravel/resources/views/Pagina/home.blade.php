@@ -13,9 +13,11 @@
 </head>
 <body>
     <header>
+        <nav class="nav-bar">
+            <div class="logo">
+             <h4>TurisWaves</h4>
 
-        <div class="center"></div>
-        <nav>
+        <div class="center">
             <ul>
                 <li><a href="{{ route('Pveiculos') }}">Home</a></li>
                 <li><a href="{{ route('Pagina') }}">Nossos Veículos</a></li>
@@ -23,6 +25,20 @@
                 <a href=""><button class="icone"><i class="bi bi-person-fill"></i></button></a>
                 <a href="{{ route('Login') }}" class="logout" onclick="logout()">Sair</a>
             </ul>
+        </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="bi bi-list"></i></button>
+            </div>
+
+            <div class="menu-mobile">
+                <ul>
+                    <li> <li><a  href="{{ route('Inicio') }}">Home</a></li>
+                    <li><a  href="{{ route('Veículos') }}">Nossos Veículos</a></li>
+                    <li><a  href="#">Reservas Online</a></li>
+                    <a href="{{ route('Login') }}" class="logout" onclick="logout()">Sair</a>
+                </ul>
+            </div>
         </nav>
         </header>
         <nav>

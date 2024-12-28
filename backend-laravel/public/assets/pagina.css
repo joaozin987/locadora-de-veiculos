@@ -7,22 +7,31 @@ body{
     width: 100%;
     height: 300vh;
 }
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 4rem;
+}
 header{
-    padding: 9px 0px;
+    padding: 0px 0px;
     text-align: center;
     background-color: rgba(21, 199, 243, 0.904);
     border: none;
+    min-width: 500px;
     
 }
 .center{
-     max-width: 1100px;
-     margin: 0 auto;
-     padding: 5px 0px 5px;
+     max-width: 1000px;
+     min-width: 700px;
+     margin: 0px 232px;
+     padding: 2px 0px 17px;
 }
 header li{
     display: inline-block;
-    margin: 10px 20px 15px 15px;
-    padding: 0;
+    margin: 0px 15px 2px 0px;
+    line-height: 20px;
+    padding: 0px;
     justify-content: space-between;
 }
 header ul li{
@@ -44,11 +53,12 @@ header .a:hover{
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(0.9);
-    padding: 8px;
+    padding: 40px;
     border-radius: 4px;
     border-bottom: 0px;
-    height: 380px;
+    height: 450px;
     width: 100%;
+    min-width: 500px;
     margin: 0 auto;
 }
 a button.icone{
@@ -57,9 +67,9 @@ a button.icone{
     margin-left: 10px;
     margin-top: 0px;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     border-radius: 50px;
-    line-height: .2vh;
+    line-height: 2px;
     background-color: rgba(21, 199, 243, 0.904);
     transition: .3s;
 }
@@ -69,12 +79,12 @@ a button.icone:hover{
     box-shadow: 0 0 20px 4px rgba(21, 199, 243, 0.904);
 }
 .logout{
-    font-size: 19px;
+    font-size: 20px;
+    line-height: 2px;
     text-decoration: none;
     color: #333;
     margin-left: 10px;
-    margin-top: 0 auto;
-    line-height: 2.4vh;
+    margin-top: 0 ;
     cursor: pointer;
 }
 a.button{
@@ -112,11 +122,91 @@ h1{
     margin-bottom: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.mobile-menu-icon{
+    display: none;
+}
+.logo{
+    display: flex;
+    font-size: 25px;
+    align-items: center ;
+    line-height: 0px;
+    margin: 0px 10px 0px;
+}
+.logo h4{
+    color: #313131;
+}
+.menu-mobile{
+    display: none;
+    background-color: rgba(21, 199, 243, 0.904);
+    padding: 30px 0px 40px 0%;
+}
+.menu-mobile li{
+    color: #f1eaea;
+    margin-top: 15px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.menu-mobile li a {
+    color: #000000;
+    margin-top: 20px;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: .3s;
+}
+.menu-mobile ul a.button{
+    padding: 6px 6px;
+    color: #e5e7e9;
+    background-color: #0f0707;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+@media screen and  (max-width: 800px) {
+    .nav-bar{
+        padding: 1.2rem 2rem;
+    }
+    .center{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        font-size: 25px;
+        line-height: 1.8vh;
+        border: none;
+        margin-left: 12rem;
+        cursor: pointer;
+    }
+    .logo{
+        margin: 0rem 6rem;
+    }
+    .menu-mobile ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    
+    .menu-mobile .center{
+        display: block;
+        padding-top: 1.2rem;
+    }
+     a button{
+      width: 50%;
+    }
+    .open{
+        display: block;
+    }
+    
+}
 form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 800px;
     margin: 0 auto;
 }
 .form-group {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/inicio.css">
     <script src="assets/js/inicio.js" defer></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
@@ -37,7 +38,7 @@
         </nav>
         <div class="menu-mobile">
             <ul>
-                <li> <li><a  href="{{ route('Inicio') }}">Home</a></li>
+                <li><a  href="{{ route('Inicio') }}">Home</a></li>
                 <li><a  href="{{ route('Veículos') }}">Nossos Veículos</a></li>
                 <li><a  href="#">Reservas Online</a></li>
                 <a class="button" href="{{ route('Cadastro') }}">Cadastre-se</a>
@@ -91,28 +92,25 @@
         
             <div class="cartao">
                 <h3>Carro Sedan Executivo AT</h3>
-                <p>Grupo AT</p>
-                <p>Chevrolet Cruze | Toyota Corolla ou Similares</p>
+                <p>Chevrolet Cruze</p>
                 <img src="https://unidashmlrac.blob.core.windows.net/wp-content/2021/03/at_chevrolet_cruze.png" alt="Carro Sedan Executivo">
-                <p>A partir de <strong>R$ 250,67/Diária</strong></p>
+                <p>R$200,67/Diária</p>
                 <button>Alugar</button>
             </div>
 
             <div class="cartao">
                 <h3>Moto Pcx</h3>
-                <p>Grupo CX</p>
                 <p> MMAX ou similares</p>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrWf-7jjaO41htqEEdhNb2mI1aw3p58vn3w&s" alt="Moto Pcx">
-                <p>A partir de <strong>R$ 80,57/Diária</strong></p>
+                <p>R$80,57/Diária</p>
                 <button>Alugar</button>
               </div>
 
               <div class="cartao">
                 <h3>Catamarã</h3>
-                <p>Grupo CT</p>
-                <p> Catamarã ou similares</p>
+                <p> Catamarã</p>
                 <img src="https://cdn.prod.website-files.com/5feb69f9ab0dff44b95b78d6/60fee34d0be6c53af1b50174_SY%20Staatenlos%2031.jpg" alt="Catamarã">
-                <p>A partir de <strong>R$ 2550,57/Diária</strong></p>
+                <p>R$2550,57/Diária</p>
                 <button>Alugar</button>
               </div>
             </div>
@@ -124,8 +122,8 @@
             <div class="txt-sobre">
                 <h1>Conheça um pouco sobre Alagoas</h1>
             
-                <div class="img">
-                    <img src="assets/img/Sao-Miguel-dos-Milagres-AL.jpg" alt="">
+                <div class="img-sobre">
+                    <img src="assets/img/Sao-Miguel-dos-Milagres-AL.jpg" alt="" class="img-sobre">
                 </div>
 
                 <div class="texto">
@@ -140,18 +138,38 @@
 
       <!--Sobre turismo-->
       <section class="turismo">
-        <div class="flex">
-            <div class="txt-turismo">
-                <h1>Descubra o Caribe Brasileiro em Alagoas!</h1>
-                <p> As Galés de Maragogi são as mais conhecidas e atraem turistas do mundo todo que buscam essa experiência única de conexão com a natureza. </p>
-                <div class="img-t">
-                    <img src="assets/img/piscinas-naturais-maceio-maragogi.jpg" alt="">
-                    <img src="assets/img/passeio-para-as-piscinas-naturais-de-Maragogi.jpg" alt="">
-                    <img src="assets/img/provas-de-que-alagoas-e-o-caribe-brasileiro-7.webp" alt="200px">
+        
+            <div class="slider">
+                <h1>Caribe Brasileiro em Alagoas!</h1>
+                <p>Mergulhe em águas cristalinas, admire a rica vida marinha e desfrute de um dia inesquecível! </p>
+              
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+              
+
+                <div class="slide-first">
+                    <img src="assets/img/06.jpeg" alt="Imagem 1"/>
                 </div>
+                <div class="slide">
+                    <img src="assets/img/DSC01326.jpg" alt="Imagem 2"/>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+
+            </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+
                 </div>
             </div>
-        </div>
+            </div>
       </section>
 
       <section class="passeio">
@@ -178,19 +196,15 @@
         <label for="Nome">Nome </label>
         <input type="text" id="Nome" placeholder="Digite seu nome">
 
-        <label for="e-mail">E-mail</label>
+        <label for="e-mail">Email</label>
         <input type="text"  id="e-mail" placeholder="Digite seu e-mail">
 
         <button class="enviar">Enviar</button>
     </section>
 
         <footer class="main-footer">
-            <div class="section">
-                <h1>Alugue um veiculo</h1>
-    
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam officiis veritatis quis eius odio odit sapiente temporibus nesciunt facere, atque omnis corporis hic ipsam quaerat neque quos alias ab!</p>
-        </div>
-            <div class="section">
+
+           <div class="section">
             <h1>Atendimento ao cliente</h1>
             <a class="btn-social" href="https://www.instagram.com/joaosantoszz__/" target="_blank">
                 <i class="bi bi-instagram"></i>
@@ -198,7 +212,6 @@
             <a class="btn-social" href="https://wa.me/5582998271078" target="_blank">
                 <i class="bi bi-whatsapp"></i>
             </a>
-                        
             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vel ducimus exercitationem odio autem inventore nisi rerum, eveniet quo aut atque ex aliquid porro, nobis distinctio quam ab officiis natus?</p>
             
         </div>
