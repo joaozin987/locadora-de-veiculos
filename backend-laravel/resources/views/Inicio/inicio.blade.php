@@ -33,7 +33,7 @@
         <li><a href="{{ route('Inicio') }}">Home</a></li>
         <li><a href="{{ route('Veículos') }}">Nossos Veículos</a></li>
         <li><a href="#">Reservas Online</a></li>
-        <li><a href="{{ route('Cadastro') }}" class="bg-blue-600 text-white px-4 py-2 rounded">Cadastre-se</a></li>
+        <li><a href="{{ route('Cadastro') }}" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Cadastre-se</a></li>
         <li><a href="{{ route('Login') }}" class="bg-gray-200 px-4 py-2 rounded">Entrar</a></li>
       </ul>
     </div>

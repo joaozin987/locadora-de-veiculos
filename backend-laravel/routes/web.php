@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::get('/Cadastro', function () {
     return view('Cadastro.cadastro');
-})->name('Veículos');
+})->name('Cadastro');
 
 Route::get('/Login', function () {
     return view('Login.login');
