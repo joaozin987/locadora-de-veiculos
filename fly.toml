@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for locadora-de-veiculos on 2025-04-17T20:27:20Z
+# fly.toml app configuration file generated for turis-wave on 2025-04-17T20:46:37Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'locadora-de-veiculos'
+app = 'turis-wave'
 primary_region = 'gig'
 
 [build]
