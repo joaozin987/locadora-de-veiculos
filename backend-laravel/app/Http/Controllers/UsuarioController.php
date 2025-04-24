@@ -23,7 +23,7 @@ class UsuarioController extends Controller {
         ]);
         
         if (User::where('email', $validated['email'])->exists()) {
-            return redirect()->route('Cadastro')->with('error', 'Usuário já cadastrado.');
+            return back()->with('status' , 'Esse Usuario já existe ');
         } else {
             $user = new User();
             $user->name = $validated['name'];

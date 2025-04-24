@@ -14,7 +14,7 @@ Route::get('/Cadastro', [UsuarioController::class, 'create'])->name('Cadastro');
 Route::post('/Cadastro', [UsuarioController::class, 'store'])->name('Cadastro.store');
 
 Route::get('/Login', [UsuarioController::class, 'loginForm'])->name('Login');
-Route::post('/Login', [AuthController::class, 'loginAttempt'])->name('auth');
+Route::post('/Login', [AuthController::class, 'loginAttempt'])->name('Pveiculos');
 
 Route::get('/Veículos', function () {
     return view('Veículos.veiculo');

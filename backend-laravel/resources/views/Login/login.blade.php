@@ -48,18 +48,29 @@
               <label for="email" class="block text-black text-xl font-serif mb-2">E-mail:</label>
               <input type="text" id="email" name="email" placeholder="Digite seu e-mail"
                   class="w-full p-3 mb-3 border border-gray-400 rounded-md text-gray-700">
-
+                 
+                  @error('email')
+                  <p>{{ $message }} </p>
+               @enderror
+      
               <label for="password" class="block text-black text-xl mb-2 font-serif">Senha:</label>
               <input type="password" id="password" name="password" placeholder="Digite sua senha"
                   class="w-full p-3 mb-3 border border-gray-400 rounded-md text-gray-700">
-
+                  @error('password')
+                  <p>{{ $message }} </p>
+               @enderror
+      
               <a href="#" class="text-blue-700 text-sm text-right block mb-6">Esqueceu sua Senha?</a>
 
               <button type="submit" class="block text-center bg-black text-white py-2 px-8 rounded-lg w-full">
                   Entrar
               </button>
-              @if ( session('status'))
-                <span class="txt_success">{{ session('status')}} </span>
+              @if (session('status'))
+              <div class="mt-4 p-2 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                  <span class="font-medium">{{ session('status') }}</span>
+              </div>
+          @endif
+          
           </form>
       </div>
   </section>

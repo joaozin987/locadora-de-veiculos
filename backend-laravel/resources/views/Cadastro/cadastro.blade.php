@@ -68,6 +68,12 @@
           @enderror
 
           <button type="submit" class="w-full text-center bg-black text-white py-2 rounded-lg block hover:bg-cadetblue hover:shadow-md">Cadastre-se</button>
+         
+          @if (session('status'))
+          <div class="mt-4 p-2 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+              <span class="font-medium">{{ session('status') }}</span>
+          </div>
+          @endif
       </form>
       
     </div>
