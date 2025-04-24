@@ -1,3 +1,1 @@
-CREATE TABLE usuarios(
-    
-)
+\d users;

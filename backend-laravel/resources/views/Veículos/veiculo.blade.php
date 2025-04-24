@@ -41,10 +41,10 @@
       </div>
     </header>
   
-    <section class="w-full mx-auto px-4 py-10 bg-[url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png')] rounded-sm ">
+    <section class="w-full mx-auto px-3 py-8 bg-[url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png')] rounded-sm ">
   
-        <h1 class="text-3xl font-bold mb-4 text-center">Aluguel de Veículos em Alagoas</h1>
-        <p class="text-center mb-8">Aluguel de Veículos em Alagoas: conforto e segurança</p>
+        <h1 class="text-2xl font-bold mb-4 text-center">Aluguel de Veículos em Alagoas</h1>
+        <p class="text-center mb-5">Aluguel de Veículos em Alagoas: conforto e segurança</p>
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <label for="retirada" class="block mb-1 ml-6">Retirada</label>
@@ -216,6 +216,54 @@
               <p class="text-gray-700">R$90,90/dia</p>
             </div>
             <button class="btn1 w-full bg-gray-800 text-white py-2 mt-4 rounded hover:bg-blue-600">Pagar antecipado</button>
+          </div>
+
+          <!-- Card 13 -->
+          <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h2 class="text-lg font-semibold">Fiat Fastback</h2>
+            <a href="#" class="text-blue-600 hover:text-blue-700 mb-4 block">Mais detalhes</a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/2023_Fiat_Fastback_%28Colombia%29_front_view.png/1024px-2023_Fiat_Fastback_%28Colombia%29_front_view.png" alt="porte-medio" class="w-full h-auto mb-4">
+            <div class="precos">
+              <p class="text-yellow-500">R$250,00/dia <span class="text-red-600">-10%</span></p>
+              <p class="text-gray-700">R$230,00/dia</p>
+            </div>
+            <button class="btn1 w-full bg-gray-800 text-white py-2 mt-4 rounded hover:bg-blue-600">Pagar antecipado</button>
+          </div>
+          
+          <!-- Card 14 -->
+          <div class="card-esgotado bg-white shadow-lg rounded-lg p-4 filter brightness-50">
+            <h2 class="text-lg font-semibold">Honda Civic</h2>
+            <a href="#" class="text-blue-600 hover:text-blue-700 mb-4 block">Mais detalhes</a>
+            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/27074/civic-exterior-right-front-three-quarter-148156.jpeg?q=80" alt="" class="w-full h-auto mb-4">
+            <div class="status">
+              <p class="text-red-600 font-bold text-xl">Indisponível</p>
+            </div>
+            <button class="btn consultar w-full bg-blue-600 text-white py-2 mt-4 rounded hover:bg-blue-700">Consultar Lojas Próximas</button>
+          </div>
+          
+          <!-- Card 15 -->
+          <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h2 class="text-lg font-semibold"> Hyundai HB20</h2>
+            <a href="#" class="text-blue-600 hover:text-blue-700 mb-4 block">Mais detalhes</a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/2023_Hyundai_HB20_1.0_T-GDi_Platinum_Plus_%28Brazil%29_front_view_02.png/330px-2023_Hyundai_HB20_1.0_T-GDi_Platinum_Plus_%28Brazil%29_front_view_02.png" alt="" class="w-full h-auto mb-4">
+            <div class="precos">
+              <p class="text-yellow-500">R$140,00/dia <span class="text-red-600">-20%</span></p>
+              <p class="text-gray-700">R$120,00/dia</p>
+            </div>
+            <button class="btn1 w-full bg-gray-800 text-white py-2 mt-6 rounded hover:bg-blue-600">Pagar antecipado</button>
+          </div>
+
+          
+           <!-- Card 16 -->
+           <div class="card bg-white shadow-lg rounded-lg p-4">
+            <h2 class="text-lg font-semibold">Honda Fit</h2>
+            <a href="#" class="text-blue-600 hover:text-blue-700 mb-4 block">Mais detalhes</a>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2020-honda-fit-mmp-1-1574789897.jpg?crop=1.00xw:0.848xh;0,0.122xh&resize=1200:*" alt="" class="w-full h-auto mb-4">
+            <div class="precos">
+              <p class="text-yellow-500">R$220,00/dia <span class="text-red-600">-20%</span></p>
+              <p class="text-gray-700">R$200,00/dia</p>
+            </div>
+            <button class="btn1 w-full bg-gray-800 text-white py-2 mt-6 rounded hover:bg-blue-600">Pagar antecipado</button>
           </div>
         </div>
       </section>

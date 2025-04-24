@@ -1,4 +1,4 @@
-FROM php:8.2-fpm
+FROM php:8.2-cli
 
 # Instala extensões necessárias
 RUN apt-get update && apt-get install -y \
@@ -6,10 +6,7 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
-    locales \
     zip \
-    jpegoptim optipng pngquant gifsicle \
-    vim \
     unzip \
     git \
     curl \
@@ -27,15 +24,16 @@ WORKDIR /var/www
 # Copia os arquivos do projeto
 COPY ./backend-laravel /var/www
 
-# Instala dependências do Laravel
-RUN composer install
+# Instala dependências e gera a key
+RUN composer install \
+  && cp .env.example .env \
+  && php artisan key:generate
 
 # Dá permissão às pastas de cache e logs
-RUN chown -R www-data:www-data /var/www \
-    && chmod -R 755 /var/www/storage
+RUN chmod -R 775 storage bootstrap/cache
 
-# Expondo a porta padrão
-EXPOSE 9000
+# Expõe a porta que o Laravel usará
+EXPOSE 8080
 
-# Comando para iniciar o PHP-FPM
-CMD ["php-fpm"]
+# Inicia o servidor embutido do Laravel
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]

@@ -40,10 +40,10 @@
   
    </header>
       <nav>
-        <section class=" w-full mx-auto px-4 py-10 bg-[url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png')] rounded-sm ">
+        <section class=" w-full mx-auto px-2 py-8 bg-[url('https://www.mmeparavoce.com.br/imgc/containers/main/imagens/maravilhas-de-maceio-principais-pontos-turisticos.png/30303e100e1505d94018831ec4d9770b.png')] rounded-sm ">
     
-            <h1 class="text-3xl  mb-4 text-center">Aluguel de Veículos em Alagoas</h1>
-            <p class="text-center mb-8">Aluguel de Veículos em Alagoas: conforto e segurança</p>
+            <h1 class="text-2xl  mb-4 text-center">Aluguel de Veículos em Alagoas</h1>
+            <p class="text-center mb-5">Aluguel de Veículos em Alagoas: conforto e segurança</p>
             <div class="grid md:grid-cols-2 gap-6 ">
               <div>
                 <label for="retirada" class="block mb-1 ml-6">Retirada</label>

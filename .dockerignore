@@ -1,0 +1,98 @@
+# flyctl launch added from backend-laravel/.gitignore
+backend-laravel/.phpunit.cache
+backend-laravel/node_modules
+backend-laravel/public/build
+backend-laravel/public/hot
+backend-laravel/public/storage
+backend-laravel/storage/*.key
+backend-laravel/storage/pail
+backend-laravel/vendor
+backend-laravel/**/.env
+backend-laravel/**/.env.backup
+backend-laravel/**/.env.production
+backend-laravel/**/.phpactor.json
+backend-laravel/**/.phpunit.result.cache
+backend-laravel/**/Homestead.json
+backend-laravel/**/Homestead.yaml
+backend-laravel/**/auth.json
+backend-laravel/**/npm-debug.log
+backend-laravel/**/yarn-error.log
+backend-laravel/.fleet
+backend-laravel/.idea
+backend-laravel/.nova
+backend-laravel/.vscode
+backend-laravel/.zed
+
+# flyctl launch added from backend-laravel/bootstrap/cache/.gitignore
+backend-laravel/bootstrap/cache/**/*
+!backend-laravel/bootstrap/cache/**/.gitignore
+
+# flyctl launch added from backend-laravel/database/.gitignore
+backend-laravel/database/**/*.sqlite*
+
+# flyctl launch added from backend-laravel/storage/app/.gitignore
+backend-laravel/storage/app/**/*
+!backend-laravel/storage/app/**/private
+!backend-laravel/storage/app/**/public
+!backend-laravel/storage/app/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/app/private/.gitignore
+backend-laravel/storage/app/private/**/*
+!backend-laravel/storage/app/private/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/app/public/.gitignore
+backend-laravel/storage/app/public/**/*
+!backend-laravel/storage/app/public/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/framework/.gitignore
+backend-laravel/storage/framework/**/compiled.php
+backend-laravel/storage/framework/**/config.php
+backend-laravel/storage/framework/**/down
+backend-laravel/storage/framework/**/events.scanned.php
+backend-laravel/storage/framework/**/maintenance.php
+backend-laravel/storage/framework/**/routes.php
+backend-laravel/storage/framework/**/routes.scanned.php
+backend-laravel/storage/framework/**/schedule-*
+backend-laravel/storage/framework/**/services.json
+
+# flyctl launch added from backend-laravel/storage/framework/cache/.gitignore
+backend-laravel/storage/framework/cache/**/*
+!backend-laravel/storage/framework/cache/**/data
+!backend-laravel/storage/framework/cache/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/framework/cache/data/.gitignore
+backend-laravel/storage/framework/cache/data/**/*
+!backend-laravel/storage/framework/cache/data/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/framework/sessions/.gitignore
+backend-laravel/storage/framework/sessions/**/*
+!backend-laravel/storage/framework/sessions/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/framework/testing/.gitignore
+backend-laravel/storage/framework/testing/**/*
+!backend-laravel/storage/framework/testing/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/framework/views/.gitignore
+backend-laravel/storage/framework/views/**/*
+!backend-laravel/storage/framework/views/**/.gitignore
+
+# flyctl launch added from backend-laravel/storage/logs/.gitignore
+backend-laravel/storage/logs/**/*
+!backend-laravel/storage/logs/**/.gitignore
+
+# flyctl launch added from backend-laravel/vendor/hamcrest/hamcrest-php/.gitignore
+backend-laravel/vendor/hamcrest/hamcrest-php/**/composer.lock
+backend-laravel/vendor/hamcrest/hamcrest-php/**/vendor
+
+# flyctl launch added from backend-laravel/vendor/mockery/mockery/docs/.gitignore
+backend-laravel/vendor/mockery/mockery/docs/**/_build
+
+# flyctl launch added from backend-laravel/vendor/psr/container/.gitignore
+backend-laravel/vendor/psr/container/**/composer.lock
+backend-laravel/vendor/psr/container/**/composer.phar
+backend-laravel/vendor/psr/container/vendor
+
+# flyctl launch added from backend-laravel/vendor/psr/event-dispatcher/.gitignore
+backend-laravel/vendor/psr/event-dispatcher/vendor
+backend-laravel/vendor/psr/event-dispatcher/**/composer.lock
+fly.toml
