@@ -158,6 +158,9 @@
         </section>
         
               <section class="w-full flex justify-center px-4">
+                <form action="{{ route('Pveiculos.store') }}" method="POST"> 
+                  @csrf
+                  
                 <div class="bg-[rgba(21,199,243,0.904)] p-6 rounded-md mt-7 w-full max-w-2xl text-black shadow-md">
                   <h1 class="serif text-lg text-center mb-6">
                     Dicas, promoções e ofertas exclusivas para Aluguel de Veículos no seu e-mail.
@@ -170,6 +173,7 @@
                       <input
                         class="p-2 w-full rounded-md text-black"
                         type="text"
+                        name="name"
                         id="Nome"
                         placeholder="Digite seu nome"
                       />
@@ -181,15 +185,22 @@
                         class="p-2 w-full rounded-md text-black"
                         type="email"
                         id="e-mail"
-                        placeholder="Digite seu e-mail"
-                      />
+                        name="email"
+                        placeholder="Digite seu e-mail"/>
+                        @error('sucess')
+                        <p>{{ $message }} </p>
+                     @enderror
+            
                     </div>
                   </div>
                   
                   <div class="w-full mt-4">
                     <button
                       class="w-full md:w-1/2 mx-auto block p-2 rounded-md bg-white text-black semibold hover:bg-slate-100 transition" >Enviar</button>
+                      
                   </div>
+                </div>
+                </form>
                 </div>
           </section>
         

@@ -22,7 +22,7 @@ class UsuarioController extends Controller {
             'password' => 'required|min:2|max:200',
         ]);
         
-        if (User::where('email', $validated['email'])->exists()) {
+       if (User::where('email', $validated['email'])->exists()) { 
             return back()->with('status' , 'Esse Usuario já existe ');
         } else {
             $user = new User();
@@ -31,8 +31,8 @@ class UsuarioController extends Controller {
             $user->password = Hash::make($validated['password']);
             $user->save();
             
-            
             return redirect()->route('Login')->with('success', 'Usuário cadastrado com sucesso. Faça login.');
+            
         }
     }
     
