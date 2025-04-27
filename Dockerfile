@@ -36,5 +36,4 @@ RUN chmod -R 775 storage bootstrap/cache
 EXPOSE 8080
 
 # Corrige o comando para usar a porta do Railway
-CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT}"]
-
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=${PORT}"]
