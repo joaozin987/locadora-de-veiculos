@@ -32,8 +32,8 @@ RUN composer install \
 # Dá permissão às pastas de cache e logs
 RUN chmod -R 775 storage bootstrap/cache
 
-# Expõe a porta que o Laravel usará
+# Expõe a porta (pode deixar 8080 mesmo)
 EXPOSE 8080
 
-# Inicia o servidor embutido do Laravel
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
+# Corrige o comando para usar a porta do Railway
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT}"]
